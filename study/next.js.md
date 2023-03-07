@@ -55,3 +55,9 @@ SEO를 위한 SSR을 가능하게 해주는 리액트의 프레임워크이다.
 # Next를 사용해야 하는 경우
 * SSR, Code Spliting을 사용할 필요가 없는 경우 👉 admin page
 * 그 외 사이트는 빠르게 보여줄 필요가 있으므로 Next.js를 사용하면 좋다.
+
+## Proptypes 사용하는 이유
+부모로부터 전달받은 prop의 데이터 타입을 검사한다.
+
+## Head 수정 방법
+각 페이지에서 Head를 import해서 수정가능
