@@ -5,16 +5,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import 'antd/dist/reset.css' //ant design 전체 적용
+import 'antd/dist/reset.css'; //ant design 전체 적용
 
 export default function App({ Component }) {
   return (
-  <>
-    <Head>
-      <title>NordBird 🕊️</title>
-    </Head>
-    <Component />
-  </>);
+    <>
+      <Head>
+        <title>NordBird 🕊️</title>
+      </Head>
+      <Component />
+    </>
+  );
 }
 
 App.propTypes = {

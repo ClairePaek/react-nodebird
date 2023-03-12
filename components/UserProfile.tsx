@@ -1,9 +1,34 @@
-import React from 'react'
+import { Avatar, Button, Card } from 'antd';
+import React from 'react';
+const { Meta } = Card;
 
-type Props = {}
+export default function UserProfile({ onLogout }) {
+  const onClick = () => {
+    onLogout();
+  };
 
-export default function UserProfile({}: Props) {
   return (
-    <div>UserProfile</div>
-  )
+    <Card
+      actions={[
+        <div key="twit">
+          twitter
+          <br />0
+        </div>,
+        <div key="followings">
+          followings
+          <br />0
+        </div>,
+        <div key="followers">
+          followers
+          <br />0
+        </div>,
+      ]}
+    >
+      <Meta
+        avatar={<Avatar src="https://joesch.moe/api/v1/random" />}
+        title="profile"
+      />
+      <Button onClick={onClick}>Logout</Button>
+    </Card>
+  );
 }
